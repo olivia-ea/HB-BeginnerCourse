@@ -58,3 +58,19 @@ if "Balloonicorn" == "baLLOONicorn":
   print True
 else:
   print False
+
+'''
+OUPUT:
+   
+Hello, world.
+Howdy, folks!
+406
+40
+False
+False
+446
+366
+('Larry', 'Gina', 'Erika', 'Buster')
+12
+False
+'''
