@@ -1,0 +1,43 @@
+#Make a variable with the name a and set the value to “Hello, world.”
+a = "Hello, world."
+
+#Make a variable with the name message and set the value to “Howdy, folks!”
+message = "Howdy, folks!"
+
+#Make a variable with the name my_num and set the value to 406.
+my_num = 406
+
+#Make a variable with the name i and set the value to 40.
+i = 40
+
+#Print the variable called a.
+print a
+
+#Print the variable called message.
+print message
+
+#Print the variable called my_num.
+print my_num
+
+#Print the variable called i.
+print i
+
+#Write an expression that evaluates the equality of the integer 9 to the integer 10.
+if 9 == 10:
+  print True
+else:
+  print False
+
+#Write an expression that evaluates the equality of the string Hello to string “hello”.
+if "Hello" == "hello":
+  print True
+else:
+  print False
+
+#Write an expression that evaluates to the sum of the variable i and the variable my_num.
+answer = i + my_num
+print answer
+
+#Write an expression that evaluates to the difference of the variable my_num and the variable i.
+answer2 = my_num - i
+print answer2
