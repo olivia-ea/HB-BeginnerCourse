@@ -1,0 +1,127 @@
+'''
+Setup: Type the following into your repl Python console.
+Write an if-statement for each of the above variables. The if-statement should check whether the length of the variable’s value is greater than 9 characters. If it is, your code should print “long string”. If it’s not, print “not a long string”.
+
+Here’s a hint:
+
+Here’s the first part. It accomplishes half of the problem. However, it doesn’t accomplish printing “not a long string” when the length is not greater than 9 characters.
+'''
+
+adjective = "absolutely fabulous"
+adjective2 = "supercalifragilisticexpialidocious"
+noun = "aardvarks"
+noun2 = "billy goats"
+verb = "lollygagging"
+verb2 = "jogging"
+
+if len(adjective) > 9:
+   print "long string"
+else:
+  print "not a long string"
+
+if len(adjective2) > 9:
+   print "long string"
+else:
+  print "not a long string"
+
+if len(noun) > 9:
+   print "long string"
+else:
+  print "not a long string"
+
+if len(noun2) > 9:
+   print "long string"
+else:
+  print "not a long string"
+
+if len(verb) > 9:
+   print "long string"
+else:
+  print "not a long string"
+
+if len(verb2) > 9:
+   print "long string"
+else:
+  print "not a long string"
+
+'''
+Using the raw_input function, prompt yourself to type something. Be sure to capture what you type into a variable. Once you have the variable, print the length of whatever you typed.
+'''
+
+myinput = raw_input("Type a word to find its length: ")
+
+len_myinput = len(myinput)
+
+print(myinput, len_myinput)
+
+'''
+Type the following into the repl Python console:
+Then, write some code that follows these specifications:
+
+If the user is correct, tell them they are correct.
+If the user is incorrect, tell them whether their answer is too high or too low.
+Do this a couple of times, making sure that if you type 1) the wrong answer 2) a “too high” answer and 3) a “too low” answer all show the correct output.
+'''
+
+correct = (2 + 2)
+correct_as_integer = int(correct)
+
+answer = raw_input("What is 2 + 2 ?")
+answer_as_integer = int(answer)
+
+if answer_as_integer != correct_as_integer:
+  print("You are incorrect!")
+  if answer_as_integer > correct_as_integer:
+    print("Your answer is too high.")
+  else:
+    print("Your answer is too low.") 
+else:
+  print("You are correct!")
+
+'''
+Write a conditional statement that checks if the variables verb and verb2 are equal to one another. If they are, print “They are equal!”. If they aren’t, print 3 things: the value of verb, the value of verb2, and the message “These are not the same”
+'''
+
+if verb == verb2:
+  print("They are equal!")
+else:
+  print("They are not equal.", verb, "is not equal to", verb2, "These are not the same.")
+
+'''
+Type the following code to prompt the user to rate the movie Wizard of Oz:
+Then, write an if/elif/else statement that follows these specifications:
+
+If they rate less than 5, tell the user “Wow, you hated it!”
+If they rate less than 7, tell the user “You are meh about this movie.”
+If they rate more than 7, tell the user “You loved it. There’s no place like home.”
+'''
+
+rating = raw_input("On a 1-10 scale, how would you rate Wizard of Oz?")
+rating_as_integer = int(rating)
+
+if rating_as_integer < 5:
+  print ("Wow, you hated it!")
+elif rating_as_integer < 7:
+  print ("You are meh about this movie.")
+else:
+  print ("You loved it. There's no place like home.")
+  
+ '''
+ OUTPUT:
+ 
+ long string
+long string
+not a long string
+long string
+long string
+not a long string
+Type a word to find its length:  hellogoodbye
+('hellogoodbye', 12)
+What is 2 + 2 ? 9
+You are incorrect!
+Your answer is too high.
+('They are not equal.', 'lollygagging', 'is not equal to', 'jogging', 'These are not the same.')
+On a 1-10 scale, how would you rate Wizard of Oz? 8
+You loved it. There's no place like home.
+
+'''
