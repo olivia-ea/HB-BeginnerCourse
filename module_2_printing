@@ -1,0 +1,54 @@
+'''
+Create 4 variables called family_member1, family_member2, family_member3, and family_member4. Set their values equal to strings containing the names of 4 of your family members. Then, call the len function on each of your family member variables, capturing the return value of the call to len in a new variable each time.
+
+At this point, you should have created 8 variables.
+
+Next, print each of the names, followed by their lengths, using the variables to write your print statements. Here is a sample output for the repl that you will write.
+
+Lastly, prompt the user of the program for a new family member to add. After they enter the person they want to add, print a message congratulating them on adding a new family member, and then print the length of the new family member string as well (similar to the others).
+'''
+
+family_member1 = "Sally"
+family_member2 = "John"
+family_member3 = "Lewis"
+family_member4 = "Cindy"
+
+len_family_member1 = len(family_member1)
+len_family_member2 = len(family_member2)
+len_family_member3 = len(family_member3)
+len_family_member4 = len(family_member4)
+
+print(family_member1, len_family_member1)
+print(family_member2, len_family_member2) 
+print(family_member3, len_family_member3) 
+print(family_member4, len_family_member4)
+
+newfamily = raw_input("Enter the name of a new family member: ")
+
+len_newfamily = len(newfamily)
+
+print(newfamily, "has been added.")
+
+print(family_member1, len_family_member1)
+print(family_member2, len_family_member2) 
+print(family_member3, len_family_member3) 
+print(family_member4, len_family_member4)
+print(newfamily, len_newfamily)
+
+'''
+OUTPUT:
+
+  
+('Sally', 5)
+('John', 4)
+('Lewis', 5)
+('Cindy', 5)
+Enter the name of a new family member:  Doug
+('Doug', 'has been added.')
+('Sally', 5)
+('John', 4)
+('Lewis', 5)
+('Cindy', 5)
+('Doug', 4)
+
+'''
