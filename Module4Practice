@@ -1,0 +1,69 @@
+'''
+Make a variable characters, whose value is a list. Inside the list should be at least 5 names of your favorite book or TV characters, as strings.
+Make a variable furniture, whose value is a list. Inside the list should be at least 4 names of pieces of furniture, as strings.
+Make a variable odd_nums, whose value is a list. Inside the list should be 5 odd numbers, as integers.
+Make a variable even_nums, whose value is a list. Inside the list should be 5 even numbers, as integers.
+Make a variable todo_list, whose value is a list. Inside the list should be two things you need to accomplish today, as strings.
+Append one character to your list called characters.
+Append one piece of furniture to your list called furniture.
+Append one odd integer to your list called odd_nums.
+Append one even integer to your list called even_nums.
+Append one To Do List item to your list called todo_list.
+Make a list of the following numbers in the following order: 0, 1, 2, 3, 4, 5, 6. Hover over the section below if you’d like a hint.
+Remove the last item from your todo_list variable using the list method called pop.
+Remove the last item from your furniture variable using the list method called pop.
+Using list indexing, print out the third odd number in your list called odd_nums. Remember, indices start at 0, not 1. So, what index does the third item have? Hover below to reveal.
+Using list indexing, print out the fifth even number in your list called even_nums. Remember, indices start at 0, not 1. So, what index does the fifth item have? Hover below to reveal.
+Using the following code, print the fifth letter in the variable called word1– the letter c. Do this using string indexing:
+Using the following code, print the second letter in the variable called word2– the letter u. Do this using string indexing:
+Given the following list of numbers that are not in order, sort the list. You can do this using the list method called sort:
+'''
+
+characters = ['Harry Potter', 'Ron Weasley', 'Hermione Granger', 'Draco Malfoy', 'Dobby']
+
+furniture = ['chair', 'desk', 'bed', 'table']
+
+odd_nums = [1, 3, 5, 7, 9]
+
+even_nums = [2, 4, 6, 8, 10]
+
+todo_list = ['clean house', 'go grocery shopping']
+
+characters.append('Professor Dumbledore')
+
+furniture.append('closet')
+
+odd_nums.append(11)
+
+even_nums.append(12)
+
+todo_list.append('cook dinner')
+
+newlist = range(5)
+
+todo_list.pop()
+
+furniture.pop()
+
+print(odd_nums[2])
+
+print(even_nums[4])
+
+word1 = 'delicious'
+print(word1[4])
+
+word2 = 'yummy'
+print(word2[1])
+
+some_numbers = [4, 2, 1, 6, 8]
+some_numbers.sort()
+print(some_numbers)
+
+'''
+OUTPUT:
+5
+10
+c
+u
+[1, 2, 4, 6, 8]
+'''
