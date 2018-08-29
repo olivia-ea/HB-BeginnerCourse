@@ -1,0 +1,94 @@
+'''
+Ask the user as series of questions using raw_input, capturing their input into appropriately-named variables. The questions should be
+
+Do you like cats? Answer Y or N
+If they do not like cats, ask them for their favorite animal.
+Do you like chocolate? Answer Y or N
+If they do not like chocolate, ask them for their favorite dessert.
+Do you drink coffee? Answer Y or N
+If they do drink coffee, ask them if they put sugar in it.
+If they do not drink coffee, ask them what their favorite morning drink is.
+Do you live in California? Answer Y or N
+If they do, ask them what city they live in.
+If they do not, ask them what state they live in.
+Do you enjoy jokes? Answer Y or N
+If they do enjoy jokes, ask them: What kinds of melons can’t marry?
+Regardless of their answer, print “Cantelopes”
+If they do not enjoy jokes, ask them why, and capture that into a variable.
+At the end of your program, print a summary of all of the answers to their questions.
+'''
+
+#Cats Question
+cats = raw_input("Do you like cats? Answer Y (yes) or N (no): ")
+cats_as_str = str(cats)
+
+if cats_as_str == "N":
+  animal = raw_input("What is your favorite animal?")
+  animal_as_str = str(animal)
+
+#Chocolate Question
+chocolate = raw_input("Do you like chocolate? Answer Y (yes) or N (no): ")
+chocolate_as_str = str(chocolate)
+
+if chocolate_as_str == "N":
+  dessert = raw_input("What is your favorite dessert?")
+  dessert_as_str = str(dessert)
+
+#Coffee Question
+coffee = raw_input("Do you like coffee? Answer Y (yes) or N (no): ")
+coffee_as_str = str(coffee)
+
+if coffee_as_str == "Y":
+  sugar = raw_input("Do you add sugar to your coffee?")
+  sugar_as_str = str(sugar)
+if coffee_as_str == "N":
+  drink = raw_input("What is your favorite morning beverage?")
+  drink_as_str = str(drink)
+
+#City Question
+cali = raw_input("Do you live in California? Answer Y (yes) or N (no): ")
+cali_as_str = str(cali)
+
+if cali_as_str == "Y":
+  city = raw_input("What city in California do you live in?")
+  city_as_str = str(city)
+if cali_as_str == "N":
+  state = raw_input("What state do you live in?")
+  state_as_str = str(state)
+
+#Jokes Question
+jokes = raw_input("Do you like jokes? Answer Y (yes) or N (no): ")
+jokes_as_str = str(jokes)
+
+if jokes_as_str == "Y":
+  answer = raw_input("What kind of melons can't marry?")
+  answer_as_str = str(answer)
+  print("Cantelopes!")
+if jokes_as_str == "N":
+  answer2 = raw_input("Why don't you like jokes?")
+  answer2_as_str = str(answer2)
+
+'''
+OUTPUT 1:
+Do you like cats? Answer Y (yes) or N (no):  N
+What is your favorite animal? DOGS
+Do you like chocolate? Answer Y (yes) or N (no):  N
+What is your favorite dessert? CAKE
+Do you like coffee? Answer Y (yes) or N (no):  Y
+Do you add sugar to your coffee? YES
+Do you live in California? Answer Y (yes) or N (no):  Y
+What city in California do you live in? BAY AREA
+Do you like jokes? Answer Y (yes) or N (no):  Y
+What kind of melons can't marry? WATERMELONS
+Cantelopes!
+
+OUTPUT 2:
+Do you like cats? Answer Y (yes) or N (no):  Y
+Do you like chocolate? Answer Y (yes) or N (no):  Y
+Do you like coffee? Answer Y (yes) or N (no):  N
+What is your favorite morning beverage? CHAI
+Do you live in California? Answer Y (yes) or N (no):  N
+What state do you live in? TEXAS
+Do you like jokes? Answer Y (yes) or N (no):  N
+Why don't you like jokes? I LOVE JOKES
+'''
