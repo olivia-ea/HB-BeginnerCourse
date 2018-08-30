@@ -1,0 +1,114 @@
+'''
+Part 1
+
+Ask the user as series of questions using raw_input, capturing their input into appropriately-named variables. The questions should be
+
+Where would you like to travel to? Name one place.
+What is another place you’d like to travel to? Name one place.
+What is one more place you’d like to travel to? Name one place.
+Add each piece of user input to an empty list that you create. Please make sure to give the list an appropriate name.
+
+Sort the list of places.
+
+Then, tell the user where they said they’d like to go. Show each place on a separate line.
+
+Part 2
+
+Copy the following list into your file:
+fun_words = ["elephant", "balloon", "macchiato", "angostura"]
+
+Then, make a two empty lists– one called first_letters and one called third letters.
+
+Using list_indexing along with string_indexing, make a variable for the first letter of each word in the fun_words list.
+
+Need a hint?
+
+Part 3
+
+Copy the following 3 lists into your file:
+
+websites = ["facebook", "twitter", "buzzfeed"]
+fruits = ["apple", "banana", "mango", "berry"]
+names = ["Bob", "Alice", "Henry", "Rick", "Carl"]
+
+Find the length of each of these lists, and store this value in three separate variables.
+
+Make an empty list called lengths.
+
+Add each length to the lengths lists.
+
+Part 4
+
+Make a list of 25 numbers. Do not hard-code the numbers– that is, don’t type out 25 numbers yourself. Review the lesson if you’re not sure how to make a list of numbers using Python.
+
+Once you have your list of 25 numbers, print out the first, fifth, tenth, and fifteenth item in your list.
+
+'''
+
+place1 = input("Where would you like to travel to? Name one place. ")
+
+place2 = input("What is another place you’d like to travel to? Name one place.")
+
+place3 = input("What is one more place you’d like to travel to? Name one place.")
+
+travel = [place1, place2, place3]
+
+travel.sort()
+
+print(travel[0])
+print(travel[1])
+print(travel[2])
+
+
+fun_words = ["elephant", "balloon", "macchiato", "angostura"]
+
+first_letters = []
+third_letters = []
+
+n = 0
+while n < 4:
+  first_word = fun_words[n] 
+  first_letter_first_word = first_word[0]
+  first_letters.append(first_letter_first_word)
+  n = n + 1
+
+print(first_letters)
+
+n = 0
+while n < 4:
+  first_wordz = fun_words[n] 
+  third_letter_first_word = first_wordz[2]
+  third_letters.append(third_letter_first_word)
+  n = n + 1
+
+print(third_letters)
+
+websites = ["facebook", "twitter", "buzzfeed"]
+fruits = ["apple", "banana", "mango", "berry"]
+names = ["Bob", "Alice", "Henry", "Rick", "Carl"]
+
+a = len(websites)
+b = len(fruits)
+c = len(names)
+
+lengths = [a, b, c]
+
+print(lengths)
+
+
+nums2 = range(24)
+print(nums2[0], nums2[4], nums2[9], nums2[14])
+
+'''
+OUTPUT:
+Where would you like to travel to? Name one place.  Japan
+What is another place you’d like to travel to? Name one place. Iceland
+What is one more place you’d like to travel to? Name one place. Australia
+Australia
+Iceland
+Japan
+['e', 'b', 'm', 'a']
+['e', 'l', 'c', 'g']
+[3, 4, 5]
+0 4 9 14
+'''
